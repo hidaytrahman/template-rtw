@@ -12,8 +12,9 @@ This is a starter template for building React applications with TypeScript and W
 -   React 19
 -   TypeScript 5
 -   Webpack 5
--   Development server with hot reloading
--   Production-ready build configuration
+-   MUI 6
+-   Development server with hot reloading - WIP
+-   Production-ready build configuration - WIP
 
 ## Getting Started
 
@@ -25,15 +26,22 @@ This is a starter template for building React applications with TypeScript and W
     cd template-react-ts-webpack
     ```
 
-	### Run
+    ### Run
 
-	```
+    ```
 
-		yarn start
+    	yarn start
 
-	```
+    ```
 
-	### Build
-	```
-	yarn build
-	```
+    ### Build
+
+    ```
+    yarn build
+    ```
+
+## Consumer
+
+This template is designed to be used as a starting point for building React applications with TypeScript and Webpack
+
+[Create a new repo with the template](https://github.com/new?template_name=template-react-ts-webpack&template_owner=hidaytrahman)
