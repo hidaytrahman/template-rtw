@@ -7,13 +7,21 @@
     "start": "webpack serve --open",
     "build": "webpack --mode production"
   },
-  "keywords": ["react", "webpack", "typescript", "template"],
+  "keywords": [
+    "react",
+    "webpack",
+    "typescript",
+    "template"
+  ],
   "author": {
     "name": "Hidayt Rahman",
     "url": "https://hidaytrahman.github.io/"
   },
   "license": "MIT",
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -28,6 +36,6 @@
     "webpack-dev-server": "^5.2.0"
   },
   "engines": {
-		"node": "22"
-	}
+    "node": "22"
+  }
 }
