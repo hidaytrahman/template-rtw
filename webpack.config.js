@@ -1,3 +1,4 @@
+// not in used - its for just development in simple configuration
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -6,7 +7,7 @@ module.exports = {
 	entry: './src/index.tsx',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js',
+		filename: 'app.[contenthash].js',
 	},
 	resolve: {
 		alias: {
