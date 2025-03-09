@@ -4,6 +4,7 @@ import { Navigation } from './components'
 import Footer from './components/Footer/Footer'
 import DashboardLayout from './layout/DashboardLayout'
 import { configureRoute, DASHBOARD_NESTED_ROUTES, MAIN_ROUTES } from './config/router.config'
+import { Box } from '@mui/material'
 
 export default function Root() {
 	return (
@@ -15,14 +16,16 @@ export default function Root() {
 
 				{/* Recommend to use  ErrorBoundary to the specific section*/}
 				<ErrorBoundary>
-					<Routes>
-						{configureRoute(MAIN_ROUTES)}
+					<Box component="section" minHeight="60vh">
+						<Routes>
+							{configureRoute(MAIN_ROUTES)}
 
-						{/* dashboard nested routes */}
-						<Route path="dashboard" element={<DashboardLayout />}>
-							{configureRoute(DASHBOARD_NESTED_ROUTES)}
-						</Route>
-					</Routes>
+							{/* dashboard nested routes */}
+							<Route path="dashboard" element={<DashboardLayout />}>
+								{configureRoute(DASHBOARD_NESTED_ROUTES)}
+							</Route>
+						</Routes>
+					</Box>
 				</ErrorBoundary>
 
 

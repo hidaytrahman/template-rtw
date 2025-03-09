@@ -1,3 +1,4 @@
+// this is an example of another layout 
 import { Outlet } from "react-router";
 
 export default function MarketingLayout() {

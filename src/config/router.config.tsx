@@ -4,6 +4,7 @@ import About from "../views/About";
 import { Home, Settings } from "../views/Dashboard";
 import Landing from "../views/Landing/Landing";
 import Contact from "../views/Contact";
+import Profile from "../views/Dashboard/Profile";
 
 
 export const configureRoute = (routes: ROUTE[]) => {
@@ -19,7 +20,7 @@ export const configureRoute = (routes: ROUTE[]) => {
 export const MAIN_ROUTES: ROUTE[] = [
 	{
 		path: '/',
-		title: "Landing",
+		title: "Home",
 		index: true,
 		name: 'landing',
 		element: <Landing />,
@@ -52,5 +53,11 @@ export const DASHBOARD_NESTED_ROUTES: ROUTE[] = [
 		title: "Settings",
 		name: 'settings',
 		element: <Settings />,
+	},
+	{
+		path: 'profile',
+		title: "My Profile",
+		name: 'profile',
+		element: <Profile />
 	}
 ]
