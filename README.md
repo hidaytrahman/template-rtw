@@ -2,13 +2,16 @@
 
 This is a starter template for building React applications with TypeScript and Webpack.
 
+[![Template](https://img.shields.io/badge/Template-React%20%2B%20TypeScript%20%2B%20Webpack-blue)](https://github.com/hidaytrahman/template-react-ts-webpack)
+
+
 ## Prerequisite
 
 -   Node 22
 -   Yarn
 
 ## Features
-
+-   Boilerplate for the react with webpack
 -   React 19
 -   TypeScript 5
 -   Webpack 5
