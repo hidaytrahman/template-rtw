@@ -13,7 +13,6 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 
 
 const drawerWidth = 240;
@@ -23,6 +22,10 @@ const navItems = [{
 }, {
   text: 'About',
   link: '/about'
+},
+{
+  text: 'Dashboard',
+  link: '/dashboard'
 }];
 
 export default function Navigation() {
