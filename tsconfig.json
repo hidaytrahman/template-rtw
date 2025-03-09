@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+	  "target": "ES6",
+	  "module": "ESNext",
+	  "jsx": "react-jsx",
+	  "strict": true,
+	  "esModuleInterop": true,
+	  "skipLibCheck": true,
+	  "forceConsistentCasingInFileNames": true,
+	  "moduleResolution": "node",
+	  "resolveJsonModule": true,
+	  "isolatedModules": true,
+	  
+	  // This allows TypeScript to emit output files, which is required for ts-loader to work.
+	  "noEmit": false 
+	},
+	"include": ["src"]
+  }
