@@ -39,7 +39,7 @@ export default function Navigation() {
       </Typography>
       <Divider />
       <List>
-        {navItems.map(({link, text}) => (
+        {navItems.map(({ link, text }) => (
           <ListItem key={link} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={text} />
@@ -52,9 +52,9 @@ export default function Navigation() {
 
 
   return (
-    <Box sx={{ display: 'flex' }} mb={8}>
+    <Box sx={{ display: 'flex' }} mb={8} data-testid="navigation">
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" color='success'>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -70,11 +70,11 @@ export default function Navigation() {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            RTW
+            ReactTW
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Link key={item.link} to={item.link}>
+              <Link key={item.link} to={item.link} style={{ padding: "0 5px", textDecoration: "none", fontSize: "18px", color: "#fff" }}>
                 {item.text}
               </Link>
             ))}
