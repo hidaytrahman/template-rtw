@@ -16,9 +16,13 @@ interface User {
 const [user, setUser] = useState<User | null>(null);
 
   const getUserProfile = async () => {
-    const response = await fetchUser();
-
-    setUser(response)
+    try {
+      const response = await fetchUser();
+      setUser(response);
+    } catch (error) {
+      console.error("Failed to fetch user profile:", error);
+      // Optionally set an error state here
+    }
   }
 
   useEffect(() => {
