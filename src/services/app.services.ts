@@ -13,15 +13,16 @@ export const fetchUser = async () => {
 };
 
 // create a post api method with axios
-const createTodo = async () => {
+export const createTodo = async (title: string, completed: boolean = false) => {
 	try {
 		const response = await axios.post('https://jsonplaceholder.typicode.com/todos', {
-			title: 'New Todo',
-			completed: false
+			title,
+			completed
 		});
-		console.log(response.data);
+		return { data: response.data, error: null };
 	} catch (error) {
 		console.error(error);
+		return { data: null, error: error instanceof Error ? error.message : 'Unknown error' };
 	}
 };
 
