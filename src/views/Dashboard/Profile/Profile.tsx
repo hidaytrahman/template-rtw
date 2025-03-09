@@ -5,7 +5,15 @@ import { fetchUser } from "@/services/app.services";
 
 function Profile() {
 
-  const [user, setUser] = useState<any>(null);
+interface User {
+  name: string;
+  greet: string;
+  location: string;
+  intro: string;
+  // Add other properties as needed
+}
+
+const [user, setUser] = useState<User | null>(null);
 
   const getUserProfile = async () => {
     const response = await fetchUser();
