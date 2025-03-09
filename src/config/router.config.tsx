@@ -3,6 +3,7 @@ import { ROUTE } from "../types";
 import About from "../views/About";
 import { Home, Settings } from "../views/Dashboard";
 import Landing from "../views/Landing/Landing";
+import Contact from "../views/Contact";
 
 
 export const configureRoute = (routes: ROUTE[]) => {
@@ -28,6 +29,12 @@ export const MAIN_ROUTES: ROUTE[] = [
 		title: "About",
 		name: 'about',
 		element: <About />,
+	},
+	{
+		path: '/contact',
+		title: "Contact Us",
+		name: 'contact',
+		element: <Contact />,
 	}
 ]
 
