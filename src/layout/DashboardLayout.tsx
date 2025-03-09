@@ -1,7 +1,7 @@
 import { Box, Container, Grid2 as Grid, Typography } from "@mui/material";
 import { NavLink, Outlet } from "react-router";
 
-export default function Dashboard() {
+export default function DashboardLayout() {
 	return (
 		<Container maxWidth="lg">
 			<Box p={2}>
