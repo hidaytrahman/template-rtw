@@ -13,20 +13,11 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import { DASHBOARD_NESTED_ROUTES, MAIN_ROUTES } from '../../config/router.config';
 
 
 const drawerWidth = 240;
-const navItems = [{
-  text: 'Home',
-  link: '/'
-}, {
-  text: 'About',
-  link: '/about'
-},
-{
-  text: 'Dashboard',
-  link: '/dashboard'
-}];
+const navItems = [...MAIN_ROUTES, DASHBOARD_NESTED_ROUTES[0]];
 
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -42,11 +33,11 @@ export default function Navigation() {
       </Typography>
       <Divider />
       <List>
-        {navItems.map(({ link, text }) => (
-          <ListItem key={link} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={text} />
-            </ListItemButton>
+        {navItems.map(({ path, title, name }) => (
+          <ListItem key={name}>
+              <Link key={name} to={path}>
+                {title}
+              </Link>
           </ListItem>
         ))}
       </List>
@@ -76,9 +67,9 @@ export default function Navigation() {
             ReactTW
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Link key={item.link} to={item.link} style={{ padding: "0 5px", textDecoration: "none", fontSize: "18px", color: "#fff" }}>
-                {item.text}
+            {navItems.map(({name, title, path}) => (
+              <Link key={name} to={path} style={{ padding: "0 5px", textDecoration: "none", fontSize: "18px", color: "#fff" }}>
+                {title}
               </Link>
             ))}
           </Box>
