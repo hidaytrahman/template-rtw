@@ -1,18 +1,25 @@
 {
 	"compilerOptions": {
-	  "target": "ES6",
-	  "module": "ESNext",
-	  "jsx": "react-jsx",
-	  "strict": true,
-	  "esModuleInterop": true,
-	  "skipLibCheck": true,
-	  "forceConsistentCasingInFileNames": true,
-	  "moduleResolution": "node",
-	  "resolveJsonModule": true,
-	  "isolatedModules": true,
-	  
-	  // This allows TypeScript to emit output files, which is required for ts-loader to work.
-	  "noEmit": false 
+		"target": "ES6",
+		"module": "ESNext",
+		"jsx": "react-jsx",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+
+		// This allows TypeScript to emit output files, which is required for ts-loader to work.
+		"noEmit": false,
+
+		"baseUrl": ".", // Sets the base directory for resolving absolute paths.
+		"paths": {
+			// Maps aliases to specific directories.
+			"@/*": ["./src/*"],
+			"components/*": ["./src/components/*"]
+		}
 	},
 	"include": ["src"]
-  }
+}

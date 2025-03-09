@@ -9,6 +9,10 @@ module.exports = {
 		filename: 'bundle.js',
 	},
 	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, 'src'),
+			"components/*": ["./src/components/*"]
+		},
 		extensions: ['.ts', '.tsx', '.js', '.jsx'],
 	},
 	module: {
