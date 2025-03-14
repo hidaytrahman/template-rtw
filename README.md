@@ -1,4 +1,4 @@
-# template-react-ts-webpack
+# template-RTW
 
 This is a starter template for building React applications with TypeScript and Webpack.
 
@@ -6,8 +6,7 @@ This is a starter template for building React applications with TypeScript and W
 
 
 ## Prerequisite
-
--   Node 22
+-   Node 22 (LTS)
 -   Yarn
 
 ## Features
