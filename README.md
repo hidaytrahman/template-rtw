@@ -1,6 +1,6 @@
 # template-RTW
 
-This is a starter template for building React applications with TypeScript and Webpack.
+React Typescript Webpack (RTW) is a starter template for building React applications with TypeScript and Webpack.
 
 [![Template](https://img.shields.io/badge/Template-React%20%2B%20TypeScript%20%2B%20Webpack-blue)](https://github.com/hidaytrahman/template-react-ts-webpack)
 
@@ -81,16 +81,11 @@ This template is designed to be used as a starting point for building React appl
 -   Production-ready build configuration
 
 
-### Try It Out!
-Ready to streamline your React development workflow? Check out the repository and give it a try:
-
-🔗 template-rtw
-
 ### Contibutions
 Feel free to fork, star, or contribute to the project. If you have any feedback or suggestions, I’d love to hear from you! Let’s build something amazing together.
 
 
 ## Final Thoughts
-The deprecation of CRA has left a void in the React ecosystem, but it also opens the door for better, more flexible solutions. template-react-ts-webpack is my attempt to fill that void and provide developers with a modern, customizable, and production-ready alternative.
+The deprecation of CRA has left a void in the React ecosystem, but it also opens the door for better, more flexible solutions. template-rtw is my attempt to fill that void and provide developers with a modern, customizable, and production-ready alternative.
 
 Give it a try, and let me know what you think! Happy coding! 🚀
