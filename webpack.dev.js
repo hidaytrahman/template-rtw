@@ -7,7 +7,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map', // For better debugging
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, 'public'),
     },
     historyApiFallback: true, // Handle client-side routing
     hot: true, // Enable Hot Module Replacement (HMR)
