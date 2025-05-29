@@ -1,19 +1,25 @@
-import { Avatar, Box, Button, Grid2 as Grid, Paper, Typography } from "@mui/material"
-import { useEffect, useState } from "react"
+import {
+  Avatar,
+  Box,
+  Button,
+  Grid2 as Grid,
+  Paper,
+  Typography,
+} from "@mui/material";
+import { useEffect, useState } from "react";
 import { fetchUser } from "@/services/app.services";
-
-
-function Profile() {
 
 interface User {
   name: string;
   greet: string;
   location: string;
   intro: string;
+  totalExperience: number;
   // Add other properties as needed
 }
 
-const [user, setUser] = useState<User | null>(null);
+function Profile() {
+  const [user, setUser] = useState<User | null>(null);
 
   const getUserProfile = async () => {
     try {
@@ -23,25 +29,24 @@ const [user, setUser] = useState<User | null>(null);
       console.error("Failed to fetch user profile:", error);
       // Optionally set an error state here
     }
-  }
+  };
 
   useEffect(() => {
-    getUserProfile()
+    getUserProfile();
   }, []);
 
-
-  if(!user) {
-    return "Loading..."
+  if (!user) {
+    return "Loading...";
   }
 
   return (
     <Box
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        minHeight: '100vh',
-        backgroundColor: '#f5f5f5',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "100vh",
+        backgroundColor: "#f5f5f5",
         padding: 2,
       }}
     >
@@ -50,21 +55,21 @@ const [user, setUser] = useState<User | null>(null);
         sx={{
           padding: 4,
           maxWidth: 600,
-          width: '100%',
-          textAlign: 'center',
+          width: "100%",
+          textAlign: "center",
         }}
       >
         <Grid container spacing={3} justifyContent="center">
           {/* Avatar Section */}
-          <Grid size={12} >
+          <Grid size={12}>
             <Avatar
               alt={user.name}
               src="https://avatars.githubusercontent.com/u/9712111?v=4"
               sx={{
                 width: 120,
                 height: 120,
-                margin: '0 auto',
-                border: '4px solid #3f51b5',
+                margin: "0 auto",
+                border: "4px solid #3f51b5",
               }}
             />
           </Grid>
@@ -72,7 +77,10 @@ const [user, setUser] = useState<User | null>(null);
           {/* Name Section */}
           <Grid size={12}>
             <Typography variant="h4" component="h1" gutterBottom>
-              {user.greet}
+              {user.greet.replace(
+                "{{%totalExperience%}}",
+                user?.totalExperience.toString()
+              )}
             </Typography>
           </Grid>
 
@@ -97,9 +105,9 @@ const [user, setUser] = useState<User | null>(null);
               color="primary"
               sx={{
                 marginTop: 2,
-                padding: '10px 30px',
-                borderRadius: '20px',
-                textTransform: 'none',
+                padding: "10px 30px",
+                borderRadius: "20px",
+                textTransform: "none",
               }}
             >
               Edit Profile
@@ -108,7 +116,7 @@ const [user, setUser] = useState<User | null>(null);
         </Grid>
       </Paper>
     </Box>
-  )
+  );
 }
 
-export default Profile
+export default Profile;
