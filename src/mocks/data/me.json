@@ -1,0 +1,7 @@
+{
+  "intro": "I am a problem solver. I thrive on utilizing my peers’ and my combined experience to produce creative, elegant solutions to difficult problems.",
+  "name": "Hidayt Rahman",
+  "totalExperience": 10,
+  "greet": "My name is Hidayt, I am a senior front-end developer, and I have {{%totalExperience%}}+ years of experience.",
+  "location": "Delhi, IND"
+}
