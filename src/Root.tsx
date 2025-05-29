@@ -1,15 +1,17 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
+import { Box, ThemeProvider } from '@mui/material'
+import { configureRoute, DASHBOARD_NESTED_ROUTES, MAIN_ROUTES } from './config/router.config'
+import { theme } from './utils/theme.utils'
 import ErrorBoundary from './ErrorBoundary'
 import { Navigation } from './components'
 import Footer from './components/Footer/Footer'
 import DashboardLayout from './layout/DashboardLayout'
-import { configureRoute, DASHBOARD_NESTED_ROUTES, MAIN_ROUTES } from './config/router.config'
-import { Box } from '@mui/material'
 
 export default function Root() {
 	return (
 		<main>
 			<BrowserRouter>
+			<ThemeProvider theme={theme}>
 				<ErrorBoundary>
 					<Navigation />
 				</ErrorBoundary>
@@ -32,6 +34,7 @@ export default function Root() {
 				<ErrorBoundary>
 					<Footer />
 				</ErrorBoundary>
+			</ThemeProvider>
 			</BrowserRouter>
 		</main>
 	)

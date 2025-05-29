@@ -1,6 +1,6 @@
 {
-  "name": "template-react-ts-webpack",
-  "version": "1.2.0",
+  "name": "template-rtw",
+  "version": "1.2.1",
   "description": "Template for React 19, Typescript 5 with Webpack 5",
   "main": "index.js",
   "scripts": {

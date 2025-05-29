@@ -1,4 +1,4 @@
-# template-RTW
+# template-rtw
 
 React Typescript Webpack (RTW) is a starter template for building React applications with TypeScript and Webpack.
 

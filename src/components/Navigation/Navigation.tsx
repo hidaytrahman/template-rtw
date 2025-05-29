@@ -48,7 +48,7 @@ export default function Navigation() {
   return (
     <Box sx={{ display: 'flex' }} mb={8} data-testid="navigation">
       <CssBaseline />
-      <AppBar component="nav" color='success'>
+      <AppBar component="nav" color='primary'>
         <Toolbar>
           <IconButton
             color="inherit"
