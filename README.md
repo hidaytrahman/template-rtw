@@ -29,6 +29,9 @@ This template is designed to be used as a starting point for building React appl
     ````
 
     ### Install
+
+   You can either execute the scripts/start.sh script directly or run the commands listed below manually.
+
     ```shell
     $ yarn install
     ```
@@ -75,6 +78,7 @@ This template is designed to be used as a starting point for building React appl
 -   TypeScript 5
 -   Webpack 5
 -   MUI 6
+-   Mock implementation with MSW
 -   React Router v7 - Integrated
 -   Services Integrated with Axios
 -   Development server with hot reloading
