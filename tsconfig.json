@@ -19,7 +19,8 @@
 			// Maps aliases to specific directories.
 			"@/*": ["./src/*"],
 			"components/*": ["./src/components/*"]
-		}
+		},
+		"types": ["@testing-library/jest-dom", "jest", "node"]
 	},
 	"include": ["src"]
 }
