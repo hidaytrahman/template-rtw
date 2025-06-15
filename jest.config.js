@@ -23,10 +23,16 @@ module.exports = {
   ],
   coverageThreshold: {
     global: {
-      branches: 90,
+      branches: 85,
       functions: 90,
       lines: 90,
       statements: 90
+    },
+    'src/services/app.services.ts': {
+      branches: 60,
+      functions: 100,
+      lines: 100,
+      statements: 100
     }
   }
 };

@@ -12,17 +12,25 @@ export const fetchUser = async () => {
 	}
 };
 
+interface CreateTodoResult {
+  data: unknown;
+  error: string | null;
+}
+
 // create a post api method with axios
-export const createTodo = async (title: string, completed: boolean = false) => {
-	try {
-		const response = await axios.post('https://jsonplaceholder.typicode.com/todos', {
-			title,
-			completed
-		});
-		return { data: response.data, error: null };
-	} catch (error) {
-		console.error(error);
-		return { data: null, error: error instanceof Error ? error.message : 'Unknown error' };
-	}
+export const createTodo = async (
+  title: string,
+  completed: boolean = false
+): Promise<CreateTodoResult> => {
+  try {
+    const response = await axios.post('https://jsonplaceholder.typicode.com/todos', {
+      title,
+      completed
+    });
+    return { data: response.data, error: null };
+  } catch (error) {
+    console.error(error);
+    return { data: null, error: error instanceof Error ? error.message : 'Unknown error' };
+  }
 };
 

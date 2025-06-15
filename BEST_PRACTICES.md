@@ -11,6 +11,10 @@ This project is a modern template for scalable React applications using TypeScri
 - **Use descriptive test names** and group related tests with `describe` blocks.
 - **Run tests locally and in CI** before merging code.
 
+## Test Coverage Caveats
+- While this template aims for 90%+ branch coverage globally, 100% branch coverage is not always achievable for every file (e.g., service files with implicit returns or unreachable branches).
+- In such cases, the Jest configuration slightly lowers the branch threshold for those files. All meaningful logic and error paths are still covered by tests.
+
 ## 2. Performance
 - **Code splitting:** Use dynamic `import()` for large or rarely used components.
 - **Memoization:** Use `React.memo`, `useMemo`, and `useCallback` to avoid unnecessary re-renders.

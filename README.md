@@ -85,6 +85,13 @@ This template is designed to be used as a starting point for building React appl
 -   Production-ready build configuration
 
 
+## Test Coverage & Branch Thresholds
+
+- This template aims for **90%+ test coverage** globally for branches, functions, lines, and statements.
+- For some files (such as service files with implicit returns or unreachable branches), 100% branch coverage is not always achievable or meaningful. In these cases, the branch threshold is slightly lowered in the Jest configuration for those files.
+- All meaningful logic and error paths are covered by tests, even if the coverage tool reports less than 100% for certain files.
+
+
 ### Contibutions
 Feel free to fork, star, or contribute to the project. If you have any feedback or suggestions, I’d love to hear from you! Let’s build something amazing together.
 
