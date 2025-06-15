@@ -1,0 +1,11 @@
+{
+  "*.{js,jsx,ts,tsx}": [
+    "eslint --fix"
+  ],
+  "*.{js,jsx,ts,tsx,md}": [
+    "prettier --write"
+  ],
+  "src/**/*.{js,jsx,ts,tsx}": [
+    "yarn test:coverage --findRelatedTests --bail"
+  ]
+}
