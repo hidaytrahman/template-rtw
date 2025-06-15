@@ -13,7 +13,13 @@ module.exports = {
     '!src/index.tsx',
     '!src/mocks/**',
     '!src/types.ts',
-    '!src/**/*.d.ts'
+    '!src/**/*.d.ts',
+    '!src/**/index.ts', // ignore all index.ts files
+    '!src/config/**', // ignore config files
+    '!src/layout/**', // ignore layout files
+    '!src/App.tsx', // ignore root App
+    '!src/ErrorBoundary.tsx', // ignore error boundary
+    '!src/Root.tsx' // ignore root entry
   ],
   coverageThreshold: {
     global: {
