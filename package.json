@@ -1,6 +1,6 @@
 {
   "name": "template-rtw",
-  "version": "1.2.2",
+  "version": "1.1.0",
   "description": "Template for React 19, Typescript 5 with Webpack 5",
   "main": "index.js",
   "scripts": {
