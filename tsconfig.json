@@ -20,7 +20,7 @@
 			"@/*": ["./src/*"],
 			"components/*": ["./src/components/*"]
 		},
-		"types": ["@testing-library/jest-dom"]
+		"types": ["@testing-library/jest-dom", "jest", "node"]
 	},
 	"include": ["src"]
 }

@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import Navigation from './Navigation';
-import * as ReactRouter from 'react-router';
+// import * as ReactRouter from 'react-router';
 
 // Mock router config
 jest.mock('../../config/router.config', () => ({
