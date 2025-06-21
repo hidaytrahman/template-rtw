@@ -1,14 +1,14 @@
-# template-rtw
+# template-rtw (`create-reactw-app`)
 
 React Typescript Webpack (RTW) is a starter template for building React applications with TypeScript and Webpack.
 
-A minimal boilerplate to kickstart React projects using TypeScript + Webpack + Babel + ESLint + Prettier.
+template-rtw AKA `create-reactw-app` is a minimal boilerplate to kickstart React projects using TypeScript + Webpack + Babel + ESLint + Prettier.
 
-Supports HMR and is easy to extend.
+> Supports HMR and is easy to extend.
 
 [![Template](https://img.shields.io/badge/Template-React%20%2B%20TypeScript%20%2B%20Webpack-blue)](https://github.com/hidaytrahman/template-react-ts-webpack)
 
-## 🚀 Quick Start with npx
+## 🚀 Quick Start with npx - (Recommended)
 
 You can scaffold a fresh project using this template via the CLI:
 
@@ -18,9 +18,7 @@ cd my-app
 yarn start
 ```
 
-e.g:
-
-![command line](image-1.png)
+![command line](demo-create-reactw-app-installation.svg)
 
 ## Getting Started with Manual approach
 
@@ -143,12 +141,14 @@ project-root/
 
 Feel free to fork, star, or contribute to the project. If you have any feedback or suggestions, I’d love to hear from you! Let’s build something amazing together.
 
-## ⭐ Related Projects
-
-`create-reactw-app` – CLI to bootstrap this template via npx
-
 ## Final Thoughts
 
 The deprecation of CRA has left a void in the React ecosystem, but it also opens the door for better, more flexible solutions. template-rtw is my attempt to fill that void and provide developers with a modern, customizable, and production-ready alternative.
 
 Give it a try, and let me know what you think! Happy coding! 🚀
+
+## ⭐ Related Projects
+
+- [Chepo](https://github.com/hidaytrahman/chepo) - Easiest way to get mock data
+- [preapi](https://github.com/hidaytrahman/preapi) - A very simple API prototype file based database
+- `create-reactw-app` – CLI to bootstrap this template via npx
