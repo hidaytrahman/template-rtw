@@ -2,6 +2,8 @@
 
 React Typescript Webpack (RTW) is a starter template for building React applications with TypeScript and Webpack.
 
+![command line](create-reatw-app.png)
+
 template-rtw AKA `create-reactw-app` is a minimal boilerplate to kickstart React projects using TypeScript + Webpack + Babel + ESLint + Prettier.
 
 > Supports HMR and is easy to extend.
