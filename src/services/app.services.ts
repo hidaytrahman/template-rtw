@@ -27,11 +27,6 @@ export const createTodo = async (
       title,
       completed
     });
-	const a= "hida";
-	a = 20; // This line will cause a TypeScript error because 'a' is a string and cannot be assigned a number
-
-	let b: number = 10;
-	b = "str"
 	return { data: response.data, error: null };
   } catch (error) {
     console.error(error);
